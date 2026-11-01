@@ -1,0 +1,12 @@
+# X+ Language — GitHub Linguist setup
+#
+# GitHub can't display a fully custom language name ("X+") in the
+# Languages bar until the language is added to github/linguist.
+# Until then, .xp sources are counted and highlighted as the
+# implementation language, and compiler-generated asm is hidden
+# from stats and diffs.
+
+*.xp text linguist-language=Python
+*.asm linguist-generated
+*.bin -text
+*.img -text
